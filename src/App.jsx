@@ -5,7 +5,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Organizers Dashboard</h1>
+      <h1>Organizers Dashboard
+      </h1>
     </div>
   )
 }
