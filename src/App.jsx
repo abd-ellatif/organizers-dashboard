@@ -1,11 +1,11 @@
 import { useState } from 'react'
-
+import NavigationBar from './components/NavigationBar'
 function App() {
 
 
   return (
     <div className="App ">
-      <h1 className="text-3xl font-bold">Organizer</h1>
+      <NavigationBar></NavigationBar>
     </div>
   )
 }
