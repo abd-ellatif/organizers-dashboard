@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom'
 
 
 export default function Logisticsmenu(){
@@ -11,13 +11,13 @@ export default function Logisticsmenu(){
         <h1 className="text-2xl font-medium">Menu</h1>
         <ul >
         <li className="m-4 my-8">
-            <button className="active:bg-blue-400 p-2 rounded-3xl"> Dashboard </button>
+            <Link to='/Logistics/' className="active:bg-blue-400 p-2 rounded-3xl"> Dashboard </Link>
         </li>
         <li className="m-4 my-8">
-           <button className="active:bg-blue-400 p-2 rounded-3xl">  Organizers </button>
+           <Link to='/Logistics/organizers' className="active:bg-blue-400 p-2 rounded-3xl">  Organizers </Link>
         </li>
         <li className="m-4 my-8">
-            <button className="active:bg-blue-400 p-2 rounded-3xl"> Settings </button>
+            <Link to='/Logistics/settings' className="active:bg-blue-400 p-2 rounded-3xl"> Settings </Link>
         </li>
     </ul>
         </div>
