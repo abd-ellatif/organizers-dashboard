@@ -10,7 +10,7 @@ export default function RhDashboardSection(){
             <h1 className="text-2xl font-semibold text-blue-600">Dashboard</h1>
             </div>
             <div >
-            <button className="bg-orange-300 text-white rounded-2xl p-1 text-sm font-semibold px-6 mx-2">Events</button>
+            <button className="bg-orange-300 text-white rounded-2xl p-1 text-sm font-semibold px-6 mx-2">New event</button>
             <button className="bg-blue-600 text-white rounded-2xl p-1 text-sm font-semibold px-6 mx-2">Announcement</button>
             </div>
         </div>

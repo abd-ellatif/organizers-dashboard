@@ -3,6 +3,8 @@ import LogisticsPage from './pages/LogisticsPage';
 import RhPage from './pages/RhPage'
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import LoginPage from './pages/LoginPage';
+import NewAnnouncement from './components/NewAnnouncement';
+import AddEvent from './components/AddEvent';
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
 
   return (
     <div className="App ">
+      <AddEvent></AddEvent>
       <Router>
       <Routes>
         <Route path='/*' element={<LoginPage></LoginPage>}></Route>

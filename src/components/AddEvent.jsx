@@ -1,90 +1,39 @@
 import React, { useState } from 'react';
 
 export default function AddEvent() {
-  const [event, setEvent] = useState({
-    eventName: '',
-    description: '',
-    location: '',
-    time: '',
-    categories: [],
-    workshops: []
-  });
 
-  const handleInputChange = (event) => {
-    setEvent({ ...event, [event.target.name]: event.target.value });
-  };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="eventName">Event Name:</label>
-        <input
-          type="text"
-          id="eventName"
-          name="eventName"
-          value={event.eventName}
-          onChange={handleInputChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="description">Description:</label>
-        <textarea
-          id="description"
-          name="description"
-          value={event.description}
-          onChange={handleInputChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="location">Location:</label>
-        <input
-          type="text"
-          id="location"
-          name="location"
-          value={event.location}
-          onChange={handleInputChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="time">Time:</label>
-        <input
-          type="time"
-          id="time"
-          name="time"
-          value={event.time}
-          onChange={handleInputChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="categories">Categories:</label>
-        <select
-          multiple
-          id="categories"
-          name="categories"
-          value={event.categories}
-          onChange={handleInputChange}
-        >
-          {/* Add options for categories */}
-        </select>
-      </div>
-      <div>
-        <label htmlFor="workshops">Workshops:</label>
-        <select
-          multiple
-          id="workshops"
-          name="workshops"
-          value={event.workshops}
-          onChange={handleInputChange}
-        >
-          {/* Add options for workshops */}
-        </select>
-      </div>
-      <button type="submit">Add Event</button>
-    </form>
-  );
-};
 
+
+    return(
+        <div className='bg-red-100 h-[450px] w-2/3 rounded-xl '>
+            <h1 className='text-blue-500 font-semibold text-xl ml-2'>Add Event</h1>
+            <div className='grid grid-cols-2 '>
+                <div className='col-span-1'>
+                    <form className='grid grid-cols-1 p-4'>
+                        <label>Event name</label>
+                        <input name='eventName' type="text" placeholder='event name' className='rounded text-sm p-1'></input>
+                        <label>Event description</label>
+                        <input name='eventName' type="text" placeholder='describe the event' className='rounded text-sm p-1'></input>
+                        <label>Event location</label>
+                        <input name='eventName' type="text" placeholder='event location' className='rounded text-sm p-1'></input>
+                        <label>Event time</label>
+                        <input name='eventName' type="text" placeholder='event time' className='rounded text-sm p-1'></input>
+                        <label>Categories</label>
+                        <input name='eventName' type="text" placeholder='categories' className='rounded text-sm p-1'></input>
+                    </form>
+                    <div className='grid grid-cols-1 gap-6 text-center'>
+                        <button className='bg-blue-500 p-3 rounded-xl mx-10 text-white font-semibold '> Save </button>
+                        <button className='border-solid border-2 border-gray-600 p-3 rounded-xl font-semibold mx-10'> Cancel </button>
+                    </div>
+                </div>
+                <div className='col-span-1'>
+
+                </div>
+            </div>
+        </div>
+    );
+
+   
+   }
