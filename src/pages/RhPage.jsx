@@ -1,4 +1,6 @@
-import DashboardSeciton from "../components/DashboardSection";
+import DashboardSeciton from "../components/RhDashboardSection";
+import MembersSection from "../components/MembersSection";
+import NewMember from "../components/NewMember";
 import OrganizersSection from "../components/OrganizersSection";
 import RHmenu from "../components/RHmenu";
 import SettingsPanel from  "../components/SettingsPanel";
@@ -9,7 +11,6 @@ export default function RhPage(props){
             <RHmenu></RHmenu>
         </div>
         <div className="col-span-4">
-            <SettingsPanel></SettingsPanel>
         </div>
         
     </div>);

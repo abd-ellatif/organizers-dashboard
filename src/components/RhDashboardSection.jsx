@@ -1,7 +1,7 @@
 
 
 
-export default function DashboardSeciton(){
+export default function RhDashboardSection(){
 
 
     return(<div className="bg-gray-300 h-full flex flex-col content-evenly gap-8 rounded-xl">
